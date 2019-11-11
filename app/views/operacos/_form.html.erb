@@ -1,0 +1,27 @@
+<%= form_with(model: operaco, local: true) do |form| %>
+  <% if operaco.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(operaco.errors.count, "error") %> prohibited this operaco from being saved:</h2>
+
+      <ul>
+      <% operaco.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :nome %>
+    <%= form.text_field :nome %>
+  </div>
+
+  <div class="field">
+    <%= form.label :tipo %>
+    <%= form.text_field :tipo %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

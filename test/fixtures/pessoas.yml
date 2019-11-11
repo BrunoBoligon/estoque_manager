@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  endereco: one
+  nome: MyString
+  documento: MyString
+
+two:
+  endereco: two
+  nome: MyString
+  documento: MyString

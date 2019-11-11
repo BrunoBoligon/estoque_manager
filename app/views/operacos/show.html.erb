@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nome:</strong>
+  <%= @operaco.nome %>
+</p>
+
+<p>
+  <strong>Tipo:</strong>
+  <%= @operaco.tipo %>
+</p>
+
+<%= link_to 'Edit', edit_operaco_path(@operaco) %> |
+<%= link_to 'Back', operacos_path %>

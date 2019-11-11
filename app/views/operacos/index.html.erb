@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Operacos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Tipo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @operacos.each do |operaco| %>
+      <tr>
+        <td><%= operaco.nome %></td>
+        <td><%= operaco.tipo %></td>
+        <td><%= link_to 'Show', operaco %></td>
+        <td><%= link_to 'Edit', edit_operaco_path(operaco) %></td>
+        <td><%= link_to 'Destroy', operaco, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Operaco', new_operaco_path %>
