@@ -1,11 +1,6 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Grupo produto:</strong>
-  <%= @produto.grupo_produto %>
-</p>
-
-<p>
   <strong>Nome:</strong>
   <%= @produto.nome %>
 </p>
@@ -13,6 +8,11 @@
 <p>
   <strong>Unidade:</strong>
   <%= @produto.unidade %>
+</p>
+
+<p>
+  <strong>Grupo produto:</strong>
+  <%= @produto.grupo_produto %>
 </p>
 
 <%= link_to 'Edit', edit_produto_path(@produto) %> |

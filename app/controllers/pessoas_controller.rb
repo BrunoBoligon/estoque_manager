@@ -69,6 +69,6 @@ class PessoasController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def pessoa_params
-      params.require(:pessoa).permit(:endereco_id, :nome, :documento)
+      params.require(:pessoa).permit(:nome, :documento, :endereco_id)
     end
 end

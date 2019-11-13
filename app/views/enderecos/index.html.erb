@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Cidade</th>
-      <th>Estado</th>
+      <th>Cep</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,7 +15,7 @@
     <% @enderecos.each do |endereco| %>
       <tr>
         <td><%= endereco.cidade %></td>
-        <td><%= endereco.estado %></td>
+        <td><%= endereco.cep %></td>
         <td><%= link_to 'Show', endereco %></td>
         <td><%= link_to 'Edit', edit_endereco_path(endereco) %></td>
         <td><%= link_to 'Destroy', endereco, method: :delete, data: { confirm: 'Are you sure?' } %></td>

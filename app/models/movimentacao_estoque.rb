@@ -1,5 +1,8 @@
 class MovimentacaoEstoque < ApplicationRecord
+  belongs_to :pessoa
   belongs_to :operacao
   belongs_to :produto
-  belongs_to :pessoa
+
+  validates :data, :quantidade, presence: true
+  validates :quantidade, numericality: { :greater_than_or_equal_to => 1 }
 end

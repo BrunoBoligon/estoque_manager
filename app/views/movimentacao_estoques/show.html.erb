@@ -11,6 +11,11 @@
 </p>
 
 <p>
+  <strong>Pessoa:</strong>
+  <%= @movimentacao_estoque.pessoa %>
+</p>
+
+<p>
   <strong>Operacao:</strong>
   <%= @movimentacao_estoque.operacao %>
 </p>
@@ -18,11 +23,6 @@
 <p>
   <strong>Produto:</strong>
   <%= @movimentacao_estoque.produto %>
-</p>
-
-<p>
-  <strong>Pessoa:</strong>
-  <%= @movimentacao_estoque.pessoa %>
 </p>
 
 <%= link_to 'Edit', edit_movimentacao_estoque_path(@movimentacao_estoque) %> |

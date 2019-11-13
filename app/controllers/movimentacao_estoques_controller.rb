@@ -69,6 +69,6 @@ class MovimentacaoEstoquesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def movimentacao_estoque_params
-      params.require(:movimentacao_estoque).permit(:data, :quantidade, :operacao_id, :produto_id, :pessoa_id)
+      params.require(:movimentacao_estoque).permit(:data, :quantidade, :pessoa_id, :operacao_id, :produto_id)
     end
 end
