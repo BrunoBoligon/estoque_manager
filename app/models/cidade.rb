@@ -1,5 +1,5 @@
 class Cidade < ApplicationRecord
   belongs_to :estado
 
-  validates :nome, :estado, presence: true
+  validates :nome, presence: true
 end
